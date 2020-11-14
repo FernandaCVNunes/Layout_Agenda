@@ -1,0 +1,210 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*essas são as tag novas para assim ser visualizado corretamente - Código para resolver erro de navegadores antigos que não reconheciam a tag main*/
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, address, main{
+	display: block;
+}
+audio, canvas, video, img, picture, embed, iframe{
+	display: inline-block; width: auto; height:auto; max-width:100%;
+}
+/*Código que edita as caracteristicas das sua tags*/
+html,body,div,span,applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, 
+samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfood, thead, tr, th, td, 
+article, aside, canvas, details, embed, figre, figcption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video, main{
+	margin:0; padding:0; border:0; font-size:100%; vertical-align: baseline;
+}
+
+/*Tornar o site responsivo*/
+@viewport{
+	width:device-width; 
+	zoom:1; 
+	min-zoom: 0.5; 
+	max-zoom: 4; 
+	orientation: portrait;
+}
+
+.quebra{
+	content:" ";
+	display: table;
+	clear:both;
+}
+
+/*Começo do nosso conteudo de layout*/
+p{
+	margin:0px;
+}
+body{
+	background-color:#BFE9F5;
+	margin-top:0 auto;
+}
+header{
+	height:159px;
+	width:80%;
+	background-color: #2C5463;
+	background-image: url(Imagens/bandeira-da-agenda-em-sobrepor-quadrados-coloridos-118182702.jpg);
+	background-repeat:no-repeat;
+    background-position:center;
+    background-size:500px;
+    border: 1px solid #2C5463;
+	margin:0 auto;
+	padding:10px;
+}
+nav{
+	height:30px;
+	width:80%;
+	margin:0 auto;
+	padding:10px;
+    border: 1px solid #2C5463;
+}
+main{
+	height:500px;
+	width:80%;
+	background-color:#1385AD;
+    /*background-image: url(Imagens/agenda-para-software-juricc81dico-como-integrar.jpg);
+	background-repeat:no-repeat;
+    background-size: cover;*/
+	margin:0 auto;
+	padding:10px;
+    border: 1px solid #2C5463;
+}
+/*Regras das Tabelas*/
+table{
+	width:100%;
+	margin:0;
+	padding:40px;
+	border:1px solid;
+	text-align: left;
+	border-color:#353434;
+    background-color: #2C5463;
+}
+td{
+	background-color: rgb(245,245,245);
+    border: 1px solid #2C5463;
+    width: 95%;
+}
+.tdLocalizar{
+    width: 60%;
+    background-color: rgb(245,245,245);
+}
+th{
+   color: white;
+}
+.thBotao{
+    background-color: #1385AD;
+    color: white;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 3px;
+    margin-left: 25px;
+    margin-top: 25px;
+    text-decoration: none;
+    text-align: center;
+    width: 80px;
+    height: 10px;
+}
+.trInserir{
+    
+}
+/*
+thead.listar{
+	border-color:#353434;
+	font-size: 18px;
+	color:#ffffff;
+	text-align: center;
+	background: 353434;
+}
+tfoot.listar{
+	border-color:#353434;
+	font-size: 18px;
+	color:#ffffff;
+	text-align: right;
+	background: 353434;
+}
+*/
+main p{
+	text-align: center;
+	font-size: 30px;
+	font-family: Arial, Verdana, sans-serif;
+    color: bisque;
+}
+
+/*Regras das divs do footer*/
+footer p{
+	text-align:justify;
+	font-size:22px;
+	margin:30px;
+	margin-left:20px;
+    color: aliceblue;
+}
+footer img{
+	padding-left:10px;
+}
+#footer1{
+	float: left;
+	width: 50%;
+}
+#footer2{
+	float: left;
+	width: 50%;
+}
+
+footer{
+	height:180px;
+	width:80%;
+	/*color:#ffffff;*/
+	background-color:#2C5463;
+	margin:0 auto;
+	padding:10px;
+     border: 1px solid #2C5463;
+}
+footer a{
+    color:#ffffff;
+}
+
+/*Css para menu feito com ul*/
+nav ul{
+	font-family: Arial, Verdana;
+	font-size:12px;
+	margin:0px 1px;
+	padding:0;
+	list-style: none;	
+}
+nav ul li{
+	display: block;
+	position:relative;
+	float: left;		
+}
+nav li ul{
+	display:none; 
+	margin:0px;
+}
+nav ul li a{
+	display: block;
+	text-decoration:none;
+	text-align: center;
+	color:#ffffff;
+	width:250px;
+	border-top:1px solid:#ffffff;
+	padding:5px 15px 5px 15px;
+	background:#2C5463;
+	margin-left:1px;
+	white-space: nowrap;
+}
+nav ul li a:hover{
+	background:#617F8A;
+}
+nav li:hover ul{
+	display: block;
+	position:absolute;
+}
+nav li:hover li {
+	float: none;
+	font-size:11px;
+}
+nav li:hover a {
+	background:#617F8A;
+}
+nav li:hover li a:hover{
+	background:#95A9B1;
+}
